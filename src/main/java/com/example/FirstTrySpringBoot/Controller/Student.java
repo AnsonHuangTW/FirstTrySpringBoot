@@ -2,12 +2,22 @@ package com.example.FirstTrySpringBoot.Controller;
 
 public class Student {
     private String strName;
-    private int age;
+    private int id;
 
-    public void setName(String name){
-        this.strName = name;
+    public int getId() {
+        return id;
     }
-    public String getName(){
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getName() {
         return strName;
     }
+
+    public void setName(String name) {
+        this.strName = name;
+    }
+
 }

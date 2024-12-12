@@ -26,10 +26,10 @@ public class TestController {
     }
 
     @RequestMapping("/user")
-    public Student user(@RequestParam String name, int age){
+    public Student user(@RequestParam String name, int id){
         Student stu = new Student();
         stu.setName(name);
-        System.out.println("Age: " + age);
+        System.out.println("ID: " + id);
         return stu;
     }
 
